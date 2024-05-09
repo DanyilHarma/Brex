@@ -56,13 +56,14 @@ header {
 /* *****************INFORMATION********************* */
 
 .wrapper-information {
-    margin-left: 41px;
+    margin-left: 60px;
 }
 
-.col-4.corporate-info {
+.corporate-info {
     font-size: 40px;
     margin-top: 100px;
-    width: 30%;
+    width: 100%;
+    max-width: 470px;
 }
 
 .sign-info {
@@ -99,6 +100,68 @@ header {
     cursor: pointer;
 }
 
-hr {
-    width: 35%;
+.wrapper-information hr {
+    width: 90%;
 }
+
+.info-paragraf {
+    margin-top: 30px;
+}
+
+.info-paragraf span:first-child {
+    font-size: 16px;
+}
+
+.info-paragraf p {
+    font-size: 14px;
+    width: 100%;
+    max-width: 425px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.learn {
+    color: #f38e67;
+    cursor: pointer;
+}
+
+.image-info {
+    width: 100%;
+    height: 80%;
+    margin-left: 16px;
+}
+
+/* *****************FIRMS IMAGES********************* */
+
+.firms {
+    margin-top: -100px;
+}
+
+/* *****************advertisement********************* */
+
+.advertisement {
+    margin-top: 250px;
+}
+
+.advertisement h1 {
+    text-align: center;
+}
+
+.advertisement span {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 19px;
+    word-spacing: 2px;
+}
+
+
+
+/* .black {
+    width: 102%;
+    height: 98%;
+}
+
+.cream {
+    width: 100%;
+} */
