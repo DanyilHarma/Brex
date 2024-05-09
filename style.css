@@ -36,6 +36,7 @@ header {
 
 .sign-button {
     font-size: 14px;
+    cursor: pointer;
 }
 
 .contact-sales {
@@ -49,4 +50,55 @@ header {
     width: 140px;
     line-height: 4px;
     background-color: #f46a35;
+    cursor: pointer;
+}
+
+/* *****************INFORMATION********************* */
+
+.wrapper-information {
+    margin-left: 41px;
+}
+
+.col-4.corporate-info {
+    font-size: 40px;
+    margin-top: 100px;
+    width: 30%;
+}
+
+.sign-info {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.open-an-acc {
+    font-size: 14px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    width: 160px;
+    height: 36px;
+    line-height: 4px;
+}
+
+.contact-sales.info {
+    border: 1px solid #f46a35;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    color: #fff;
+    height: 36px;
+    width: 160px;
+    line-height: 4px;
+    background-color: #f46a35;
+    cursor: pointer;
+}
+
+hr {
+    width: 35%;
 }
