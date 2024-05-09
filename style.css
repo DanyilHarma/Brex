@@ -1,0 +1,52 @@
+body * {
+    font-family: "Roboto", sans-serif;
+}
+
+/* *****************HEADER********************* */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.menu-header {
+    margin-left: -700px;
+    margin-top: 18px;
+}
+
+.menu-header li {
+    display: inline-block;
+    margin-right: 45px;
+    font-size: 14px;
+}
+
+.menu-header li img {
+    width: 10px;
+    margin-left: 5px;
+}
+
+.sign-header {
+    display: flex;
+    gap: 30px;
+    align-items: center
+}
+
+.sign-button {
+    font-size: 14px;
+}
+
+.contact-sales {
+    border: 1px solid #f46a35;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    color: #fff;
+    height: 36px;
+    width: 140px;
+    line-height: 4px;
+    background-color: #f46a35;
+}
