@@ -339,3 +339,26 @@ header {
     width: 20px;
     margin-right: 5px;
 }
+
+/* *****************CAROUSEL********************* */
+
+.item {
+    margin-top: 250px;
+}
+
+.item img {
+    width: 100%;
+    max-width: 150px;
+    margin: 50px auto;
+}
+
+.item p {
+    max-width: 680px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 22px;
+}
+
+.owl-carousel .owl-nav.disabled {
+    display: block !important;
+}
