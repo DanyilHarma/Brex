@@ -162,13 +162,11 @@ header {
     height: 657px;
     background-image: url(images/IMAGE\ \(9\).png);
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: 1.5%;
-    background-size: 48.7%;
+    background-size: 105.4%
 }
 
 .image-black h3,
-p {
+.image-black p {
     color: #fff;
     text-align: center;
 }
@@ -203,11 +201,11 @@ p {
     height: 657px;
     background-image: url(images/IMAGE\ \(10\).png);
     background-repeat: no-repeat;
-    background-size: 99.3%;
+    background-size: 105.4%
 }
 
 .image-cream h3,
-p {
+.image-cream p {
     color: #000;
     text-align: center;
 }
@@ -234,4 +232,110 @@ p {
 .image-card {
     display: flex;
     justify-content: center;
+}
+
+/* *****************CREATE A BUDGET********************* */
+
+.create-wrapper {
+    margin-top: 70px;
+    background-color: #F9F9F9;
+    padding-top: 130px;
+    padding-bottom: 40px;
+    padding-left: 35px;
+}
+
+.create-paragraf h2 {
+    font-size: 36px;
+}
+
+.create-paragraf p {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 800px;
+    font-size: 20px;
+}
+
+.budget-work-button {
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #000;
+    height: 38px;
+    width: 175px;
+    line-height: 38px;
+    cursor: pointer;
+}
+
+.create-window {
+    margin: 30px -15px;
+    width: 98%;
+    padding-top: 120px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #fff;
+    height: 600px;
+}
+
+.create-window h1 {
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.create {
+    margin-left: -230px;
+    display: flex;
+    justify-content: center;
+}
+
+.create-image {
+    margin-top: -20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.choice-list {
+    margin-left: 100px;
+    margin-top: -20px;
+}
+
+.create-image img {
+    width: 100%;
+    max-width: 110px;
+}
+
+.name {
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.who {
+    font-weight: 400;
+    font-size: 11px;
+    color: #aba8a8;
+}
+
+.choice {
+    border: 1px solid #f1f1f1;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 15px;
+    width: 300%;
+    margin-bottom: 10px;
+}
+
+.choice:hover {
+    border: 1px solid #6d6c6c;
+    box-shadow: 0px 0px 4px 0px;
+}
+
+.choice img {
+    width: 20px;
+    margin-right: 5px;
 }
