@@ -344,6 +344,9 @@ header {
 
 .item {
     margin-top: 250px;
+    width: 100%;
+    max-width: 680px;
+    margin: 0 auto;
 }
 
 .item img {
@@ -357,8 +360,92 @@ header {
     margin: 0 auto;
     text-align: center;
     font-size: 22px;
+    margin-bottom: 40px;
 }
 
-.owl-carousel .owl-nav.disabled {
-    display: block !important;
+.owl-nav {
+    display: none;
+}
+
+.item span {
+    margin-top: 50px;
+    font-size: 12px;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+}
+
+/* *****************CUSTOMERS********************* */
+
+.customers {
+    margin-top: 220px;
+}
+
+.customers h2 {
+    width: 100%;
+    max-width: 505px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 130%;
+    margin-bottom: 75px;
+}
+
+.customer-info {
+    margin-top: 20px;
+}
+
+.customer-info p {
+    font-size: 18px;
+    width: 85%;
+    max-width: 315px;
+    line-height: 140%;
+}
+
+/* *****************TABLE********************* */
+
+.table {
+    margin-top: 100px;
+    margin-left: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.table table td {
+    padding: 70px;
+    border: 1px solid black;
+}
+
+.img-table {
+    margin-right: 150px;
+}
+
+.img-table a:nth-child(3) {
+    width: 100%;
+    max-width: 90px;
+    margin-right: 170px;
+}
+
+/* *****************FOR WHAT********************* */
+
+.for-what {
+    background-color: #F9F9F9;
+    padding: 30px;
+    margin-top: 190px;
+}
+
+.for-what h2 {
+    margin-top: 100px;
+    font-size: 40px;
+    max-width: 400px;
+}
+
+.for-what p {
+    max-width: 400px;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.for-what .contact-sales.info {
+    margin-right: 10px;
 }
