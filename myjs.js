@@ -16,3 +16,26 @@ $('.owl-carousel').owlCarousel({
     }
 })
 
+
+// Пытаюсь сделать вставку из массивов //
+products = ["Overview", "Business account", "Credit card", "Rewards", "Financial modeling", "Expense tracking", "Spend management", "Bill pay", "Integrations", "Brex API", "Pro access", "Security"];
+company = ["About Brex", "Careers", "Contact", "Press", "Blog"];
+resource = ["Help", "Status", "Privacy", "Legal agreement", "Cookie preferences"];
+
+function arrayPush(array, classElement) {
+    let list = document.createElement("ul");
+    array.forEach(function (item) {
+        let linkList = document.createElement("a");
+        linkList.href = "#";
+        let listLi = document.createElement("li");
+        listLi.classList.add("array")
+        listLi.textContent = item;
+        linkList.appendChild(listLi);
+        list.appendChild(linkList);
+    })
+    document.querySelector(classElement).appendChild(list);
+}
+
+arrayPush(products, ".product");
+arrayPush(company, ".company");
+arrayPush(resource, ".resource");

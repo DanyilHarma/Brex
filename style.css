@@ -162,7 +162,7 @@ header {
     height: 657px;
     background-image: url(images/IMAGE\ \(9\).png);
     background-repeat: no-repeat;
-    background-size: 105.4%
+    background-size: 99.4%
 }
 
 .image-black h3,
@@ -346,7 +346,10 @@ header {
     margin-top: 250px;
     width: 100%;
     max-width: 680px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 275px;
+    margin-bottom: 10px;
 }
 
 .item img {
@@ -378,7 +381,7 @@ header {
 /* *****************CUSTOMERS********************* */
 
 .customers {
-    margin-top: 220px;
+    margin-top: 175px;
 }
 
 .customers h2 {
@@ -448,4 +451,42 @@ header {
 
 .for-what .contact-sales.info {
     margin-right: 10px;
+}
+
+/* *****************FOOTER********************* */
+
+.wrapper-footer {
+    padding-top: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #171717;
+}
+
+.top-footer {
+    margin-top: 100px;
+}
+
+.product,
+.company,
+.resource {
+    color: #fff;
+}
+
+.product ul,
+.company ul,
+.resource ul {
+    padding: 0;
+}
+
+.product a,
+.company a,
+.resource a {
+    text-decoration: none;
+}
+
+.array {
+    margin-top: 7px;
+    color: #bcbdbd;
+    font-size: 14px;
+    list-style-type: none;
 }
