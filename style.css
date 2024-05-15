@@ -1,31 +1,61 @@
 body * {
     font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
 }
 
 /* *****************HEADER********************* */
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
     padding-left: 10px;
     padding-right: 10px;
+    background-color: #fff;
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15)
 }
 
 .menu-header {
-    margin-left: -700px;
     margin-top: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .menu-header li {
     display: inline-block;
-    margin-right: 45px;
     font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: -0.14px;
+    padding: 4px 8px;
+    border: 1px solid transparent;
 }
 
-.menu-header li img {
-    width: 10px;
+.ul-1,
+.ul-2 {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.menu-header .ul-1 li:nth-of-type(n+2):nth-of-type(-n+4):hover {
+    border: 1px solid #e7e4e4;
+    border-radius: 6px;
+
+    .header-svg {
+        transform: rotate(360deg);
+        color: #f46a35;
+    }
+}
+
+.header-svg {
+    fill: none;
+    width: 11px;
+    height: 7px;
+    transform: rotate(180deg);
     margin-left: 5px;
+    margin-top: -2px;
 }
 
 .sign-header {
@@ -51,6 +81,11 @@ header {
     line-height: 4px;
     background-color: #f46a35;
     cursor: pointer;
+    transition: background-color .3s;
+}
+
+.contact-sales:hover {
+    background-color: #FF8050;
 }
 
 /* *****************INFORMATION********************* */
@@ -100,6 +135,10 @@ header {
     cursor: pointer;
 }
 
+.contact-sales.info:hover {
+    background-color: #FF8050;
+}
+
 .wrapper-information hr {
     width: 90%;
 }
@@ -120,9 +159,14 @@ header {
     margin-bottom: 10px;
 }
 
-.learn {
+.learn a {
     color: #f38e67;
     cursor: pointer;
+    text-decoration: none;
+}
+
+.learn a:hover {
+    color: #f38e67;
 }
 
 .image-info {
@@ -404,6 +448,15 @@ header {
     line-height: 140%;
 }
 
+.customers .learn {
+    color: #f38e67;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+
+
 /* *****************TABLE********************* */
 
 .table {
@@ -449,8 +502,14 @@ header {
     margin-top: 30px;
 }
 
-.for-what .contact-sales.info {
+.for-what .contact-sales.info a {
     margin-right: 10px;
+    color: #fff;
+    text-decoration: unset;
+}
+
+.for-what .contact-sales.info:hover {
+    background-color: #FF8050;
 }
 
 /* *****************FOOTER********************* */
