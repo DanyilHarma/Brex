@@ -1,3 +1,4 @@
+// Настройка карусели//
 
 $('.owl-carousel').owlCarousel({
     loop: true,
@@ -15,9 +16,30 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+// Задание аттрибута для ссылок//
 
+$("a").attr("target", "_blank");
 
-// Пытаюсь сделать вставку из массивов //
+// Всплывающее окно при наведении на списки в header//
+
+// Замена иконок при наведении//
+
+document.querySelectorAll(".image-window").forEach(function (elem) {
+    let image = elem.querySelector("img");
+
+    elem.addEventListener("mouseover", function () {
+        let hoverSrc = image.getAttribute("data-hover");
+        image.src = hoverSrc;
+    })
+
+    elem.addEventListener("mouseout", function () {
+        let originalSrc = image.getAttribute("data-original");
+        image.src = originalSrc;
+    })
+})
+
+// Пытаюсь сделать вставку из массивов в footer//
+
 products = ["Overview", "Business account", "Credit card", "Rewards", "Financial modeling", "Expense tracking", "Spend management", "Bill pay", "Integrations", "Brex API", "Pro access", "Security"];
 company = ["About Brex", "Careers", "Contact", "Press", "Blog"];
 resource = ["Help", "Status", "Privacy", "Legal agreement", "Cookie preferences"];
