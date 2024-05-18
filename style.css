@@ -99,23 +99,23 @@ header {
 /* *****************PRODUCTS********************* */
 .products-window {
     height: 550px;
-    position: sticky;
     z-index: 10;
-    top: 0;
-    padding-top: 25px;
+    padding-top: 39px;
     padding-left: 20px;
     margin-left: -15px;
-
+    display: none;
 }
 
 .products-window .span,
-.solutions-window .span {
+.solutions-window .span,
+.resources-window span {
     font-weight: 600;
     font-size: 15px;
 }
 
 .products-window hr,
-.solutions-window hr {
+.solutions-window hr,
+.resources-window hr {
     height: .4px !important;
     opacity: .15;
     margin-top: 5px;
@@ -159,12 +159,13 @@ header {
 
 .info-image span:not(.tm) {
     font-size: 15px;
+    font-weight: 400;
     color: #6b6b6b;
 }
 
 .link-window {
     text-decoration: none;
-    color: #6b6b6b;
+    color: #000000;
 }
 
 .link-window:hover {
@@ -181,16 +182,27 @@ header {
     max-width: 35px;
 }
 
+
+.ul-1 .item-li:hover .menu-drop {
+    display: block;
+    position: fixed;
+    top: 46px;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    border-bottom: 5px solid #6b6b6b;
+    cursor: default;
+}
+
 /* *****************SOLUTIONS********************* */
 
 .solutions-window {
     height: 500px;
-    position: sticky;
     z-index: 10;
-    top: 0;
-    padding-top: 25px;
+    padding-top: 39px;
     padding-left: 20px;
     margin-left: -15px;
+    display: none;
 }
 
 .image-solutions {
@@ -233,6 +245,41 @@ header {
 .solutions-window .arrow {
     width: 15px;
     margin-left: -1px;
+}
+
+/* *****************RESOURCES********************* */
+
+.resources-window {
+    height: 450px;
+    z-index: 10;
+    padding-top: 39px;
+    padding-left: 20px;
+    margin-left: -15px;
+    display: none;
+}
+
+.resources-window img {
+    max-width: 35px;
+}
+
+.title-resources span {
+    display: inline;
+}
+
+.flex-title .link-title {
+    color: #f46a35;
+    cursor: pointer;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.flex-title span .arrow-title-resources {
+    margin-left: 3px;
+}
+
+.flex-title {
+    display: flex;
+    justify-content: space-between;
 }
 
 /* *****************INFORMATION********************* */

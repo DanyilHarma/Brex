@@ -22,42 +22,42 @@ $("a").attr("target", "_blank");
 
 // Всплывающее окно при наведении на списки в header//
 
-$(document).ready(function () {
-    $(".products-window,.solutions-window").hide();
+// $(document).ready(function () {
+//     $(".products-window,.solutions-window").hide();
 
-    $(".products,.products-window").mouseenter(function () {
-        $(".products-window").show();
-        $(".solutions-window").hide();
-    });
+//     $(".products,.products-window").mouseenter(function () {
+//         $(".products-window").show();
+//         $(".solutions-window").hide();
+//     });
 
-    $(".products-window").mouseleave(function (e) {
-        if (!$(e.relatedTarget).closest(".products-window").length) {
-            $(".products-window").hide();
-        }
-    });
+//     $(".products-window").mouseleave(function (e) {
+//         if (!$(e.relatedTarget).closest(".products-window").length) {
+//             $(".products-window").hide();
+//         }
+//     });
 
-    $(".menu-header").mouseenter(function () {
-        if (!$(".products-window").is(":hover")) {
-            $(".products-window").show();
-            $(".solutions-window").hide();
-        }
-        if (!$(".solutions-window").is(":hover")) {
-            $(".solutions-window").show();
-            $(".products-window").hide();
-        }
-    })
+//     $(".menu-header").mouseenter(function () {
+//         if (!$(".products-window").is(":hover")) {
+//             $(".products-window").show();
+//             $(".solutions-window").hide();
+//         }
+//         if (!$(".solutions-window").is(":hover")) {
+//             $(".solutions-window").show();
+//             $(".products-window").hide();
+//         }
+//     })
 
-    $(".solutions,.solutions-window").mouseenter(function () {
-        $(".solutions-window").show();
-        $(".products-window").hide();
-    });
+//     $(".solutions,.solutions-window").mouseenter(function () {
+//         $(".solutions-window").show();
+//         $(".products-window").hide();
+//     });
 
-    $(".solutions-window").mouseleave(function (e) {
-        if (!$(e.relatedTarget).closest(".solutions-window").length) {
-            $(".solutions-window").hide();
-        }
-    });
-});
+//     $(".solutions-window").mouseleave(function (e) {
+//         if (!$(e.relatedTarget).closest(".solutions-window").length) {
+//             $(".solutions-window").hide();
+//         }
+//     });
+// });
 
 
 // Замена иконок при наведении//
