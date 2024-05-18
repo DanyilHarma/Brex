@@ -97,13 +97,31 @@ header {
 
 /***************************************WINDOW******************************************/
 /* *****************PRODUCTS********************* */
+.menu-drop {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s ease, visibility .5s ease;
+    position: fixed;
+    top: 63px;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    border-bottom: 5px solid #6b6b6b;
+    cursor: default;
+    z-index: 10;
+}
+
+.ul-1 .item-li:hover .menu-drop {
+    opacity: 1;
+    visibility: visible;
+}
+
 .products-window {
     height: 550px;
     z-index: 10;
     padding-top: 39px;
     padding-left: 20px;
     margin-left: -15px;
-    display: none;
 }
 
 .products-window .span,
@@ -182,18 +200,6 @@ header {
     max-width: 35px;
 }
 
-
-.ul-1 .item-li:hover .menu-drop {
-    display: block;
-    position: fixed;
-    top: 46px;
-    right: 0;
-    left: 0;
-    background-color: #fff;
-    border-bottom: 5px solid #6b6b6b;
-    cursor: default;
-}
-
 /* *****************SOLUTIONS********************* */
 
 .solutions-window {
@@ -202,7 +208,6 @@ header {
     padding-top: 39px;
     padding-left: 20px;
     margin-left: -15px;
-    display: none;
 }
 
 .image-solutions {
@@ -255,7 +260,6 @@ header {
     padding-top: 39px;
     padding-left: 20px;
     margin-left: -15px;
-    display: none;
 }
 
 .resources-window img {
